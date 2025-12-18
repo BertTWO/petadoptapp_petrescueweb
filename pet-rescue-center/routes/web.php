@@ -5,8 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PetController;
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+    return redirect()->route('login');
+});
 
 // Guest Routes (Login/Register)
 Route::middleware('guest')->group(function () {

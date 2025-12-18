@@ -106,7 +106,7 @@
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                 <div class="flex space-x-2">
                                     @if($adoption->status === 'pending')
-                                        <form action="{{ route('pets.update-adoption-status', $adoption) }}" method="POST">
+                                        <form action="{{ route('adoptions.update', $adoption) }}" method="POST">
                                             @csrf
                                             @method('PATCH')
                                             <input type="hidden" name="status" value="approved">
@@ -116,7 +116,7 @@
                                             </button>
                                         </form>
                                         <span class="text-gray-300">|</span>
-                                        <form action="{{ route('pets.update-adoption-status', $adoption) }}" method="POST">
+                                        <form action="{{ route('adoptions.update', $adoption) }}" method="POST">
                                             @csrf
                                             @method('PATCH')
                                             <input type="hidden" name="status" value="rejected">

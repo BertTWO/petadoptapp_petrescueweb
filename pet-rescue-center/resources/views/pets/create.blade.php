@@ -160,10 +160,10 @@
                             <label class="block text-sm font-medium text-gray-700 mb-2">Status *</label>
                             <select name="status" required 
                                     class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-gray-900 transition-colors">
-                                <option value="Available" {{ old('status') == 'Available' ? 'selected' : '' }}>Available</option>
-                                <option value="Pending" {{ old('status') == 'Pending' ? 'selected' : '' }}>Pending</option>
-                                <option value="Adopted" {{ old('status') == 'Adopted' ? 'selected' : '' }}>Adopted</option>
-                                <option value="Reserved" {{ old('status') == 'Reserved' ? 'selected' : '' }}>Reserved</option>
+                                <option value="available" {{ old('status') == 'available' ? 'selected' : '' }}>Available</option>
+                                <option value="pending" {{ old('status') == 'pending' ? 'selected' : '' }}>Pending</option>
+                                <option value="adopted" {{ old('status') == 'adopted' ? 'selected' : '' }}>Adopted</option>
+                                <option value="reserved" {{ old('status') == 'reserved' ? 'selected' : '' }}>Reserved</option>
                             </select>
                         </div>
 
